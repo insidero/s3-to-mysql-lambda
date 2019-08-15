@@ -5,7 +5,7 @@ This lambda function retrieves the uploaded csv file from S3 and loads the data 
 
 Permissions:
 - S3: Get*, List*
-- AWSLambdaVPCAccessExecutionRole -> because in my case the RDS was in a VPC, although it was publicly available, the lambda needs the role so it can create and delete ENI's.  
+- AWSLambdaVPCAccessExecutionRole -> because in my case the RDS was in a VPC, although it was publicly available, the lambda needs the role so it can create and delete ENI's (Elastic network interfaces).  
 -"logs:CreateLogGroup",
 -"logs:CreateLogStream",
 -"logs:PutLogEvents",
